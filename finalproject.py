@@ -10,3 +10,6 @@ class Todo_List:
     def remove_item(self, item):
         self.items.remove(item)
 
+class Item:
+    def __init__(self):
+        pass
