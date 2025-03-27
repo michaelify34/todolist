@@ -1,4 +1,5 @@
-#To-do list
+#To-do list   
+from flask import Flask as fl
 
 class Todo_List:
     def __init__(self, items):
@@ -13,3 +14,6 @@ class Todo_List:
 class Item:
     def __init__(self):
         pass
+
+    def name_item(self, name):
+        self.name = name
