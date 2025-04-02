@@ -1,10 +1,13 @@
 #------------TO RUN: in git bash terminal, type "flask --app {filename} run"----------------
-from flask import Flask as fl
+from flask import Flask
+from flask import render_template
 
-app = fl(__name__)
+app = Flask(__name__)
 
 @app.route("/")
-
 @app.route("/home")
 def home():
-    return "<h1> To-Do List </h1>"
+    return render_template("main.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
